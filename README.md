@@ -1,6 +1,11 @@
 # 🏫 Smart Campus Navigator
 
+
+## 🌐 Live Demo
+
+[🚀 Open Smart Campus Navigator](https://smart-campus-navigator-f582.onrender.com)
 Smart Campus Navigator is a web-based application that helps students and visitors find the shortest route between different locations inside a campus.
+
 
 ## ✨ Features
 
