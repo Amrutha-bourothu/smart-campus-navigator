@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Campus Navigator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>🏫 Smart Campus Navigator</h1>
+        <p>Explore your campus and find the shortest route</p>
+    </header>
+
+    <main>
+
+        <section class="search-box">
+
+            <label>Where are you?</label>
+
+            <select id="start">
+                <option value="">Select starting point</option>
+                <option value="Main Gate">Main Gate</option>
+                <option value="CSE Block">CSE Block</option>
+                <option value="Library">Library</option>
+                <option value="ECE Block">ECE Block</option>
+                <option value="Canteen">Canteen</option>
+            </select>
+
+            <label>Where do you want to go?</label>
+
+            <select id="end">
+                <option value="">Select destination</option>
+                <option value="Main Gate">Main Gate</option>
+                <option value="CSE Block">CSE Block</option>
+                <option value="Library">Library</option>
+                <option value="ECE Block">ECE Block</option>
+                <option value="Canteen">Canteen</option>
+            </select>
+
+            <button onclick="findRoute()">
+                🧭 Find Shortest Route
+            </button>
+
+        </section>
+
+        <section id="result">
+
+            <h2>📍 Route Details</h2>
+
+            <p id="path"></p>
+            <p id="distance"></p>
+
+        </section>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
